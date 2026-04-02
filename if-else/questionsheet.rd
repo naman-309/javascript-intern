@@ -2,33 +2,34 @@
 
 🟢 Level 1 — Basic Real Life (Easy)
 1️⃣ Temperature Check
-
 User temperature enter kare.
 
 agar temperature > 35 → "It's very hot"
 agar temperature < 10 → "It's very cold"
 warna → "Weather is normal"
-2️⃣ Website Login Access
 
+
+2️⃣ Website Login Access
 User ka role check karo.
 
 agar role = "admin" → "Full access"
 warna → "Limited access"
+
+
 3️⃣ Mobile Battery Warning
 
 User battery percentage input kare.
-
 agar battery ≤ 20 → "Battery Low"
 warna → "Battery OK"
 4️⃣ Movie Ticket Age Check
 
 User ki age lo.
-
 agar age ≥ 18 → "You can watch the movie"
 warna → "Not allowed"
 🟡 Level 2 — If-Else Ladder
-5️⃣ Internet Speed Category
 
+
+5️⃣ Internet Speed Category
 Speed input lo.
 
 Speed	Result
@@ -36,19 +37,20 @@ Speed	Result
 ≥50 Mbps	Fast
 ≥10 Mbps	Average
 <10 Mbps	Slow
+
+
 6️⃣ E-commerce Delivery Charge
 
 Order amount input lo.
-
 agar amount ≥ 1000 → "Free Delivery"
 agar amount ≥ 500 → "Delivery charge ₹50"
 warna → "Delivery charge ₹100"
+
+
 7️⃣ Student Attendance Check
 
 Student exam tab de sakta hai jab:
-
 attendance ≥ 75
-
 warna "Not allowed for exam"
 
 🟠 Level 3 — AND (&&) Operator
@@ -133,3 +135,4 @@ bill ≥ 3000 AND weekend
 bill ≥ 2000
 → "10% Discount"
 warna "No discount"
+
