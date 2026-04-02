@@ -26,6 +26,8 @@ User ki age lo.
 
 agar age ≥ 18 → "You can watch the movie"
 warna → "Not allowed"
+
+
 🟡 Level 2 — If-Else Ladder
 5️⃣ Internet Speed Category
 
