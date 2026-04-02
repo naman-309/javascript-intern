@@ -26,6 +26,8 @@ warna → "Battery OK"
 User ki age lo.
 agar age ≥ 18 → "You can watch the movie"
 warna → "Not allowed"
+
+
 🟡 Level 2 — If-Else Ladder
 
 
@@ -135,4 +137,7 @@ bill ≥ 3000 AND weekend
 bill ≥ 2000
 → "10% Discount"
 warna "No discount"
+<<<<<<< HEAD
 
+=======
+>>>>>>> e6e27f738ef960c63b45b14d9de392fe5014a943
