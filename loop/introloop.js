@@ -17,9 +17,7 @@
 //         console.log("odd numbner", i)s
 //     }
 // }
-
-
-// print totl -  add the number divisble  by 3 
+// print total -  add the number divisble  by 3 
 
 let sum = 0;
 for (i = 1; i <= 50; i++) {
