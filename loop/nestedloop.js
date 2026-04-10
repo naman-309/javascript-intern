@@ -130,17 +130,12 @@ for (i = 1; i <= 10; i++) {
 for (let i = 3; i <= 50; i++) {
     let fact = '';
     for (let j = 2; j < i; j++) {     /// = ka  sing  hat  dege  to  lagest  number  fact print  nhi hoga
-
+        /// also we do the  half  of   i ,  we   do not want  to print  the   largest  number  
         if (i % j == 0) {
             fact += j + "";
-
         }
-
-
     }
-
-    console.log(`facts of ${i} is: ${'' + fact}`);
-
+    console.log(`facts of ${i} is: ${'' + fact}`)
 }
 
 
@@ -156,10 +151,13 @@ for (let i = 3; i <= 50; i++) {
         if (i % j == 0) {
             counter++;
         }
-
-
     }
 
-    // if  
 }
 
+
+
+
+for (let i = 0; i < 3; i++) {      /// agar var   use    kr rha tio  333 
+    setTimeout(() => console.log(i), 1)
+}
