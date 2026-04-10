@@ -83,5 +83,64 @@ console.log('total', sum)
 
 
 
-// find  the factoral 
+// find  the factriol - home work
+
+
+// 3×3 grid hai. Har row ka sum alag-alag print karo.
+for (i = 1; i <= 3; i++) {
+
+    let summ = 0;
+
+    for (j = 1; j <= 3; j++) {
+
+        summ += j
+
+        // sum = sum + j
+
+    }
+
+    console.log(`kr diya sum print row ka  ${summ}`)
+
+}
+// check even number in every grid 
+
+for (i = 1; i <= 10; i++) {
+
+    let evencount = 0;
+
+    for (j = 1; j <= 10; j++) {
+
+        if (j % 2 === 0) {
+
+            evencount = evencount + j
+
+
+
+        }
+
+    }
+    console.log(`count  even number in grid   ${evencount}`)
+
+}
+
+
+// calaclatwe the  factorial -hw 
+
+let grandTotal = 0; // to  store  the  summ of  all  fact  
+
+for (let i = 1; i <= 10; i++) {
+    let fact = 1; // Har number ke liye facts 1 se shuru hoga
+
+    //to calculate the  fact 
+    for (let j = 1; j <= i; j++) {
+        fact *= j;
+    }
+
+    console.log(`facts of ${i} is: ${fact}`);
+
+    // Har factorial ko grand total mein add karo
+    grandTotal += fact;
+}
+
+console.log("Total Sum of all facts:", grandTotal);
 
