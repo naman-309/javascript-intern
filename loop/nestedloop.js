@@ -157,7 +157,22 @@ for (let i = 3; i <= 50; i++) {
 
 
 
+//  Diagonal Sum (Important)
 
-for (let i = 0; i < 3; i++) {      /// agar var   use    kr rha tio  333 
-    setTimeout(() => console.log(i), 1)
+let countt = 1;
+let diagonalSum = 0;
+
+for (let i = 1; i <= 3; i++) {
+    for (let j = 1; j <= 3; j++) {
+
+        // Agar Row aur Column barabar hain
+        if (i === j) {
+            diagonalSum += countt;
+            console.log(`Matched! Row:${i}, Col:${j} -> Value: ${countt}`);
+        }
+
+        count++; // Count hamesha badhega 1 se 9 tak
+    }
 }
+
+console.log("Total Diagonal Sum (1+5+9):", diagonalSum);
