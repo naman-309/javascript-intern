@@ -126,21 +126,40 @@ for (i = 1; i <= 10; i++) {
 
 // calaclatwe the  factorial -hw 
 
-let grandTotal = 0; // to  store  the  summ of  all  fact  
 
-for (let i = 1; i <= 10; i++) {
-    let fact = 1; // Har number ke liye facts 1 se shuru hoga
+for (let i = 3; i <= 50; i++) {
+    let fact = '';
+    for (let j = 2; j < i; j++) {     /// = ka  sing  hat  dege  to  lagest  number  fact print  nhi hoga
 
-    //to calculate the  fact 
-    for (let j = 1; j <= i; j++) {
-        fact *= j;
+        if (i % j == 0) {
+            fact += j + "";
+
+        }
+
+
     }
 
-    console.log(`facts of ${i} is: ${fact}`);
+    console.log(`facts of ${i} is: ${'' + fact}`);
 
-    // Har factorial ko grand total mein add karo
-    grandTotal += fact;
 }
 
-console.log("Total Sum of all facts:", grandTotal);
+
+
+/// to print  fact  more  than three   
+
+console.log('next')
+for (let i = 3; i <= 50; i++) {
+    let counter = 0;
+    let num = '';
+    for (let j = 2; j <= i; j++) {
+
+        if (i % j == 0) {
+            counter++;
+        }
+
+
+    }
+
+    // if  
+}
 
