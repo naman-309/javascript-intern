@@ -1,5 +1,8 @@
 //  basic  question 
 /// outr lopp 2 time and ineer  loop 3  times  
+
+const process = require("node:process")
+
 // also counting the  run time  of  ineer  
 let count = 0
 for (i = 1; i <= 2; i++) {
@@ -176,3 +179,53 @@ for (let i = 1; i <= 3; i++) {
 }
 
 console.log("Total Diagonal Sum (1+5+9):", diagonalSum);
+
+
+// Increasing pattern
+for (let i = 1; i <= 3; i++) {
+    for (let j = 1; j <= i; j++) {
+        process.stdout.write(j + "   ");
+    }
+    // Ek row khatam hone ke baad line change
+    console.log("");
+}
+
+console.log("................end  of above ...........");
+
+
+
+
+//Reverse pattern
+
+for (let i = 10; i >= 1; i--) {
+    for (let j = 1; j <= i; j++) {
+        process.stdout.write(j + "   ");
+    }
+    // Ek row khatam hone ke baad line change
+    console.log("");
+}
+
+console.log("................end  of above ...........");
+
+
+// Grid coordinates
+
+for (i = 1; i <= 3; i++) {
+
+    for (j = 1; j <= 3; j++) {
+        console.log(i, j)
+    }
+}
+
+console.log("................end  of above  here...........");
+
+//Continuous numbers print
+let num = 1;
+for (let i = 1; i <= 3; i++) {
+    for (let j = 1; j <= 3; j++) {
+        process.stdout.write(num + "\t");
+        num++; // Har print ke baad number ko 1 se badha do
+    }
+    // Ek row (3 numbers) khatam hone ke baad line change karo
+    console.log("");
+}
