@@ -195,8 +195,6 @@ console.log(`vowels count in '${v1}': ${counter1}`);
 
 
 
-
-
 // 4. Count consonants in a string.
 console.log("Count consonants  in a string.")
 
@@ -241,13 +239,162 @@ else {
 }
 
 // . 7. Convert lowercase letters to uppercase manually.
-let lower = "naman"
-let code = lower.charCodeAt(0);
+console.log('Convert lowercase letters to uppercase manually')
+let lower = "NAMAN";
+let upper = "";
 
-if (code >= 97 && code <= 122) {
-    code = code - 32;
+const alpha = "abcdefghijklmnopqrstuvwxyz";
+const ALPHA = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+
+for (let i = 0; i < lower.length; i++) {
+    let char = lower[i];
+    let index = alpha.indexOf(char);
+
+    if (index !== -1) {
+        // If the character is found in our lowercase list, swap it
+        upper += ALPHA[index];
+    } else {
+        // If it's not a lowercase letter (like a space or number), keep it as is
+        upper += char;
+    }
 }
 
-let upper = String.fromCharCode(code);
-console.log(upper);
+console.log('to uppercase :', upper); // Output: "NAMAN"
 
+
+//8. Convert uppercase letters to lowercase manually.
+
+
+//9. Count number of spaces in a string.
+
+console.log("Count number of spaces in a string.")
+let s = "n m  "
+let count1 = 0;
+for (i = 0; i <= s.length - 1; i++) {
+    if (s[i] === " ") {
+        count1++
+    }
+
+}
+console.log('number  of  spaces are:', count1)
+
+
+// 10. Print characters at even index positions.
+
+console.log(" Print characters at even index positions")
+let even = "naman"   // 0 = n , 2 = m , 4 =n output = nmn
+let index = ""
+for (i = 0; i < even.length; i++) {
+
+    if (i % 2 === 0) {
+        index += even[i]
+    }
+}
+console.log('even index char :', index)
+
+//11. Print characters at odd index positions.
+
+console.log("Print characters at odd index positions.")
+
+let odd = "naman"
+
+let index1 = ""
+
+for (i = 0; i < odd.length; i++) {
+    if (i % 2 !== 0) {
+        index1 += odd[i]
+    }
+}
+console.log('odd index char :', index1)
+
+//12. Find ASCII value of each character.
+
+console.log("Find ASCII value of each character.")
+
+const str0 = "Hello";
+
+for (let i = 0; i < str0.length; i++) {
+    const char = str0[i];
+    const ascii = str0.charCodeAt(i);
+    console.log(`Character: ${char} | ASCII: ${ascii}`);
+}
+
+
+
+// 13. Replace all spaces with -.
+console.log('Replace all spaces with -')
+let replace = " naman "
+let temp0 = ""
+
+
+for (i = 0; i <= replace.length - 1; i++) {
+
+    if (replace[i] === " ") {
+        temp0 += '-'
+
+    }
+    else {
+
+        temp0 += replace[i]
+    }
+}
+console.log("space  repalce  with '-':", temp0)
+
+// 14. Count how many times a specific character appears.
+
+console.log("Count how many times a specific character appears.")
+let repeat = "naman"
+let countercount = 0
+let target = "a"
+for (i = 0; i < repeat.length; i++) {
+
+    if (repeat[i] === target) {
+        countercount++
+    }
+
+}
+console.log(target, "appers :", countercount, 'times')
+
+
+
+//15. Remove all vowels from a string.
+console.log(' Remove all vowels from a string.')
+
+
+let js = "intern";
+let vol = "aeiouAEIOU"; // Added uppercase just in case!
+let result = ""; // This will hold our "cleaned" string
+
+for (let i = 0; i < js.length; i++) {
+    // Check if the vowels string DOES NOT include the current character
+    // if (!vol.includes(js[i])) {
+    //     result += js[i]; // Add the consonant to our result
+    // }
+    if (vol.inc)
+}
+
+console.log(result); // Should output "ntrn"
+
+
+let js = "intern";
+let vol = "aeiou";
+let result = "";
+
+for (let i = 0; i < js.length; i++) {
+    let isVowel = false; // Assume it's a consonant first
+
+    // Inner loop: Check current letter against every vowel
+    for (let j = 0; j < vol.length; j++) {
+        if (js[i] === vol[j]) {
+            isVowel = true; // Found a match! It's a vowel
+            break; // Stop looking, we already know it's a vowel
+        }
+    }
+
+    // Only add to result if the inner loop never found a vowel
+    if (isVowel === false) {
+        result += js[i];
+    }
+}
+
+console.log(result); // "ntrn"
