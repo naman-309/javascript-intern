@@ -133,3 +133,121 @@ for (let i = 0; i < str5.length; i++) {
         console.log(sub);
     }
 }
+
+console.log("Form now  50 practice  question are  statring ")
+console.log(" ")
+console.log(" ")
+
+
+
+//. 1. Print each character of a string using a loop.
+
+console.log('Print each character of a string using a loop')
+let print = `hello intern`
+for (i = 0; i <= print.length - 1; i++) {
+    //
+    console.log(print[i])
+
+}
+
+//.2. Count total characters in a string without using .length.
+let chr = "naman"
+console.log("Count total characters in a string without using .length. ")
+
+for (let i = 0; chr[i] !== undefined; i++) {
+
+}
+console.log('length is', i)
+
+
+//3. Count vowels in a string.
+console.log("Count vowels in a string.")
+
+let v = "naman"
+let counter = 0
+
+for (let i = 0; i <= v.length - 1; i++) {
+    if (v[i] === "a" ||
+        v[i] === "e" ||
+        v[i] === "i" ||
+        v[i] === "o" ||
+        v[i] === "u"
+    ) {
+
+        counter++
+
+    }
+}
+console.log(`vowels count  in '${v}': ${counter}`)
+
+// secod way  by using includes 
+let v1 = "naman";
+let vowels1 = "aeiou";
+let counter1 = 0;
+
+for (let i = 0; i < v.length; i++) {
+    if (vowels1.includes(v1[i])) {
+        counter1++;
+    }
+}
+
+console.log(`vowels count in '${v1}': ${counter1}`);
+
+
+
+
+
+// 4. Count consonants in a string.
+console.log("Count consonants  in a string.")
+
+let suppose = "namn"
+let consonants = "rtypsdfghjklzxcvbnm"
+let out = 0
+for (i = 0; i <= suppose.length - 1; i++) {
+
+
+    if (consonants.includes(suppose[i])) {
+        out++
+    }
+}
+console.log(`consonents count in '${suppose}': ${out}`);
+
+// 5. Reverse a string using a loop.
+console.log("Reverse a string using a loop")
+
+let before = `21234567890`
+let rev = ''
+for (i = before.length - 1; i >= 0; i--) {
+    rev += before[i]
+}
+console.log("reversed:", rev)
+
+// 6. Check if a string is palindrome.
+console.log("Check if a string is palindrome")
+let ispalindrome = "naman"
+let may = false
+let temp = ""
+for (i = ispalindrome.length - 1; i >= 0; i--) {
+    temp += ispalindrome[i]
+
+}
+if (ispalindrome === temp) {
+    flg = true
+    console.log("this is  palandrome  string", flg)
+}
+
+else {
+    console.log("not  plandone")
+}
+
+// . 7. Convert lowercase letters to uppercase manually.
+let lower = "naman"
+let code = lower.charCodeAt(0);
+
+if (code >= 97 && code <= 122) {
+    code = code - 32;
+}
+
+let upper = String.fromCharCode(code);
+console.log(upper);
+
