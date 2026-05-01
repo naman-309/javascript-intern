@@ -229,3 +229,5 @@ for (let i = 1; i <= 3; i++) {
     // Ek row (3 numbers) khatam hone ke baad line change karo
     console.log("");
 }
+
+
