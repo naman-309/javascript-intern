@@ -367,34 +367,97 @@ let result = ""; // This will hold our "cleaned" string
 
 for (let i = 0; i < js.length; i++) {
     // Check if the vowels string DOES NOT include the current character
-    // if (!vol.includes(js[i])) {
-    //     result += js[i]; // Add the consonant to our result
-    // }
-    if (vol.inc)
+    if (!vol.includes(js[i])) {
+        result += js[i]; // Add the consonant to our result
+    }
+
 }
 
-console.log(result); // Should output "ntrn"
+console.log('without vowels :', result);
 
 
-let js = "intern";
-let vol = "aeiou";
-let result = "";
+// let js = "intern";
+// let vol = "aeiou";
+// let result = "";
 
-for (let i = 0; i < js.length; i++) {
-    let isVowel = false; // Assume it's a consonant first
+// for (let i = 0; i < js.length; i++) {
+//     let isVowel = false; // Assume it's a consonant first
 
-    // Inner loop: Check current letter against every vowel
-    for (let j = 0; j < vol.length; j++) {
-        if (js[i] === vol[j]) {
-            isVowel = true; // Found a match! It's a vowel
-            break; // Stop looking, we already know it's a vowel
+//     // Inner loop: Check current letter against every vowel
+//     for (let j = 0; j < vol.length; j++) {
+//         if (js[i] === vol[j]) {
+//             isVowel = true; // Found a match! It's a vowel
+//             break; // Stop looking, we already know it's a vowel
+//         }
+//     }
+
+//     // Only add to result if the inner loop never found a vowel
+//     if (isVowel === false) {
+//         result += js[i];
+//     }
+// }
+
+// console.log(result); // "ntrn"
+
+
+//16. Remove all duplicate characters from a string.
+console.log(' Remove all duplicate characters from a string.')
+
+let dup = "abaaaaabcvvv"  // m 
+let report = ""
+
+for (i = 0; i < dup.length; i++) {
+
+    let flg = false   // naman //i 0 =n  , 1,
+
+    for (j = 0; j < i; j++) {
+
+        if (dup[j] === dup[i]) {
+
+            flg = true
+        } i
+
+    }
+
+    if (flg !== true) {
+        report += dup[i]
+    }
+
+
+}
+console.log("removed dup form:", dup, ":", report)
+
+
+//17. Find the first non-repeating character.
+
+console.log("Find the first non-repeating character")
+let non = "intern";
+let result1 = "";
+
+for (let i = 0; i < non.length; i++) {
+    let count11 = 0;
+
+
+    for (let j = 0; j < non.length; j++) {
+        if (non[i] === non[j]) {
+            count11++;
+
         }
+
     }
 
-    // Only add to result if the inner loop never found a vowel
-    if (isVowel === false) {
-        result += js[i];
+    // If count is 1, it means the character only matched itself
+    if (count11 === 1) {
+        result1 = non[i];
+        break; // Stop because we found the FIRST one
     }
 }
 
-console.log(result); // "ntrn"
+console.log("first non - rep char  :", result1);
+
+
+
+console.log(' yuck : got confused  about  the  concept :Variable refresh ,Counting & logic strong karne ke liye')
+console.log('20 question for this  problrem them i  continue form 18question : 50question sheet  of string   ')
+
+
