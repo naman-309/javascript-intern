@@ -52,7 +52,6 @@ console.log(ren)  // added  new  elements
 
 
 
-// sum of array 
 let ren1 = ["1", "2", "3", "4"]
 let print = ""
 for (i = 0; i <= ren1.length - 1; i++) {
@@ -71,6 +70,28 @@ for (i = ren11.length - 1; i >= 0; i--) {
 console.log("reverse  :", rev)
 
 
+let arr = [10, 20, 30, 40];
+for (let i = 0; i <= arr.length - 1; i++) {
+    console.log(arr[i])
 
 
+}
 
+// summ of  arr  element  
+let sum = [1, 2, 3]
+
+let final = 0
+
+for (i = 0; i < sum.length; i++) {
+    final += sum[i]
+}
+console.log(final)
+
+
+//largest  arr  element 
+let lar = [1, 2, 3]
+
+for (i = 0; i < lar.length; i++) {
+
+
+}
