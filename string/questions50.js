@@ -461,3 +461,34 @@ console.log(' yuck : got confused  about  the  concept :Variable refresh ,Counti
 console.log('20 question for this  problrem them i  continue form 18question : 50question sheet  of string   ')
 
 
+// String: "naman"
+// 👉 Har character ka count print karo
+// Example: n = 2, a = 2, m = 1
+
+//n compare krna  hai uske  age  and  piche  wale se 
+
+let ka = "naman"
+let countka = 0
+
+for (i = 0; i < ka.length; i++) {
+
+    for (j = 0; j < ka.length; j++) {
+        if (ka[j] === ka[i]) {
+
+            countka++
+
+        }
+    }
+
+
+}
+
+console.log()
+
+
+// String: "naman"
+// 👉 Har character ka count print karo
+// Example: n = 2, a = 2, m = 1
+
+//compare krna  hai uske  age  and  piche  wale se 
+
