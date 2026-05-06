@@ -491,4 +491,112 @@ console.log()
 // Example: n = 2, a = 2, m = 1
 
 //compare krna  hai uske  age  and  piche  wale se 
+let com = "naman"
 
+
+for (i = 0; i < com.length; i++) {
+    // i=0 = n
+    // 5  times  j chlega  
+    //n = n = true   counter  ++
+    //n =a ==false
+    //n=m == false
+    //n= n == true   counter ++
+    let counted = false    // chaek krne liye  ki double counting  na  ho jaye  
+    for (k = 0; k < i; k++) {
+
+        if (com[k] === com[i]) {
+            counted = true
+
+        }
+    }
+    if (counted) {
+        continue;
+    }
+
+
+    let add = 0
+
+    for (j = 0; j < com.length; j++) {
+
+        if (com[i] === com[j]) {
+            add++
+
+        }
+
+
+    }
+    console.log("count of  each char:", com[i], "=", add)
+
+}
+
+
+
+
+// String: "abcabc"
+//👉 Unique characters print karo (without using Set)
+let uni = "naman"
+let last = ""
+
+for (i = 0; i < uni.length; i++) {
+
+    let flg = false;
+
+    for (j = 0; j < i; j++) {
+        if (uni[i] === uni[j]) {
+            flg = true
+            // last += uni[i]
+            break
+        }
+
+    }
+    if (flg === false) {
+        last += uni[i]
+
+    }
+
+}
+console.log("the unique char in string :", last)
+
+
+//String: "hello"
+//👉 Har character ke liye alag line me count print karo
+
+let hello = "hello"
+
+for (i = 0; i < hello.length; i++) {
+
+    //to remove the  dup
+    let counted = false
+    for (k = 0; k < i; k++) {
+        if (hello[k] === hello[i]) {
+            counted = true
+        }
+    }
+    if (counted) {
+        continue;
+
+
+    }
+
+    let har = 0
+    for (j = 0; j < hello.length; j++) {
+
+        if (hello[j] === hello[i]) {
+            har++;
+
+        }
+    }
+    console.log("print count:", hello[i], "=", har)
+    //1  , 1 ,2 ,1
+
+
+
+}
+
+
+
+
+
+
+//String: "aabbcc"
+//Check karo ki string me sab characters equal count me hain ya nahi
