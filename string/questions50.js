@@ -2,6 +2,8 @@
 // string is a premitive  data type
 // denoted  by = " " '' `` 
 
+const { only } = require("node:test")
+
 let exp = "naman patidar" // example of  string 
 let exp1 = `naman123` // example of  string  
 let exp2 = "12345" // example of  string 
@@ -600,3 +602,150 @@ for (i = 0; i < hello.length; i++) {
 
 //String: "aabbcc"
 //Check karo ki string me sab characters equal count me hain ya nahi
+
+
+// String: "naman"
+// 👉 Reverse string manually (loop use karke)
+
+let n = "hello"
+let r = "";
+for (let i = n.length - 1; i >= 0; i--) {
+    r += n[i]
+}
+console.log("reversed:", r)
+
+
+
+// String: "madam"
+//👉 Check palindrome (without reverse function)
+let pal = "naman"
+
+let w = ""
+for (let i = pal.length - 1; i >= 0; i--) {
+    w += pal[i]
+}
+if (w[i] === pal[i] && pal !== " ") {
+    console.log(w, ":palindrome")
+}
+else {
+    console.log(w, "not palindrome")
+}
+
+
+//String: "abc123"
+//👉 Letters aur digits alag karo
+
+let and = "a12a3abc";
+
+let letters = "";
+let digits = "";
+
+// 1. i < and.length rakhein taaki 'undefined' na aaye
+for (let i = 0; i < and.length; i++) {
+
+    if (!isNaN(and[i])) {
+        digits += and[i];
+    } else {
+        letters += and[i];
+    }
+}
+
+console.log("letters =", letters);
+console.log("digits =", digits);
+
+
+//String: "aabbbcccc"
+//👉 Sabse zyada repeat hone wala character find karo
+
+
+//� Har character ke liye count reset ho raha hai ya nahi — ye samajhne ke liye:
+//👉 Print karo:
+
+
+//String: "naman123"
+//👉 Count:
+//vowels
+//consonants
+//digits
+let t = "naman123";
+let tt = ""; // vowels
+let digdig = ""; // digits
+let con = ""; // consonants
+let vo = "aeiou";
+
+for (let i = 0; i < t.length; i++) {
+    let char = t[i].toLowerCase(); // Sabko lowercase kar  
+
+    if (vo.includes(char)) {
+        tt += char;
+    }
+    else if (char >= '0' && char <= '9') {
+        // Agar character digit hai
+        digdig += char;
+    }
+    else {
+        con += char;
+    }
+}
+
+console.log('vowels:', tt);
+console.log('consonants:', con);
+console.log('digits:', digdig);
+
+// String: "a1b2c"
+//👉 Digits ka sum nikalo
+
+let atrangi = "a1b2c3def45"
+let onlydig = ""
+let sumof = 0
+for (let char of atrangi) {
+
+    if (!isNaN(char)) {
+        onlydig += char
+
+    }
+    // find  sum    onlydig = 12345
+
+
+}
+for (sum of onlydig) {
+
+    sumof += Number(sum)
+    //sumof += +sum
+
+}
+
+console.log("total is :", sumof)
+/// another  way to solve  same  above  
+
+let ar = "12abs3"
+let sunbe = 0
+for (let char of ar) {
+
+    if (char >= 0 && char <= 9 && char !== " ") {
+        sunbe += Number(char)
+    }
+
+}
+console.log("totoa is  :", sunbe)
+
+
+// String: "aaabb"
+// 👉 Count consecutive characters
+let shyam = "aaabbc"
+let countershyam = 1
+
+let rul = ""
+for (i = 0; i <= shyam.length - 1; i++) {
+
+
+    if (shyam[i] === shyam[i + 1]) {
+        countershyam++
+    }
+    else {
+        rul += shyam[i] + countershyam
+        countershyam = 1
+
+    }
+}
+console.log(rul)
