@@ -749,3 +749,186 @@ for (i = 0; i <= shyam.length - 1; i++) {
     }
 }
 console.log(rul)
+
+//String: "abcabcabc"
+//👉 Har character kitni baar aaya → bina repeat print karo
+
+let tokyo = "abcabcabcc"
+let tempp = ""
+
+
+for (i = 0; i <= tokyo.length - 1; i++) {
+    let found = false
+    for (k = 0; k < tempp.length; k++) {
+        if (tempp[k] === tokyo[i]) {
+            found = true
+
+        }
+    }
+
+    if (found === false) {
+        let countt = 0
+        for (j = 0; j < tokyo.length; j++) {
+
+
+            if (tokyo[i] === tokyo[j]) {
+                countt++
+
+
+            }
+
+        }
+
+        console.log(tokyo[i], countt)
+        tempp += tokyo[i]
+
+    }
+}
+
+// String: "hello world"
+// 👉 Spaces count karo
+
+let space = "he llo  world"
+let counttt = 0
+
+for (char of space) {
+    if (char === " ") {
+        counttt++
+    }
+
+}
+console.log("space", counttt)
+
+
+// String: "JavaScript"
+// 👉 Uppercase aur lowercase count karo
+
+let barlin = "JavaScript"
+let up = 0
+let low = 0
+
+for (char of barlin) {
+
+    if (char === char.toUpperCase()) {
+        up++
+    }
+    else if (char === char.toLowerCase()) {
+        low++
+    }
+
+}
+console.log("upper", up)
+console.log("lower", low)
+
+// String: "aabbaa"
+// 👉 First non-repeating character find karo
+
+let you = "abb"
+let foundunique = false
+
+for (i = 0; i < you.length; i++) {
+    let count = 0
+    for (j = 0; j < you.length; j++) {
+
+        if (you[i] === you[j]) {
+            count++
+        }
+
+    }
+
+    if (count === 1) {
+        console.log("first non repeting char:", you[i])
+        foundunique = true
+        break // to stop when we  found  fisrt  char  
+
+    }
+
+
+}
+
+if (!foundunique) {
+    console.log("No unique character found");
+}
+
+
+//String: "abcde"
+//👉 Har character ka ASCII print karo
+let ac = "naman"
+
+for (char of ac) {
+    console.log(char, ":", char.charCodeAt(0))
+}
+
+//String: "banana"
+//👉 Count kitni baar "an" aata hai
+let den = "banana"
+let increment = 0
+for (i = 0; i < den.length; i++) {
+
+    if (den[i] === "a" && den[i + 1] === "n") {
+        increment++
+    }
+}
+console.log("the  'an' in the  string:", increment, "times")
+
+let anda = "mississippippppp";
+let maxCount = 0; // Champion count
+let maxChar = "";  // Champion character
+
+for (let i = 0; i < anda.length; i++) {
+    let countbag = 0;
+
+    for (let j = 0; j < anda.length; j++) {
+        if (anda[i] === anda[j]) {
+            countbag++;
+        }
+    }
+
+
+    if (countbag > maxCount) {
+        maxCount = countbag;
+        maxChar = anda[i];
+    }
+}
+
+// Loop ke bahar Champion ko print karo
+console.log(maxChar, maxCount);
+
+/// sher  me  
+let reo = 121
+let tok = ""
+let reoo = reo.toString()
+
+for (i = reoo.length - 1; i >= 0; i--) {
+
+    tok += reoo[i]
+
+}
+
+if (tok === reoo) {
+    console.log("yes")
+}
+else {
+    console.log("not  pal")
+}
+
+// 19. Count words in a string (without split).
+//18. Find the first repeating character.
+
+let re = "annmm"
+
+
+for (i = 0; i <= length - 1; i++) {
+
+
+}
+
+
+let sum = "aaabbbccc"
+
+
+
+for (i = 0; i <= sum.length; i++) {
+
+
+}
