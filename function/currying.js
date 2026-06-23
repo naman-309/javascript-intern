@@ -414,7 +414,7 @@ let login = (correctpass) => {
         }
         else {
 
-            return "pas not matched"
+            return "pass not matched"
         }
     }
 
@@ -425,3 +425,7 @@ let login = (correctpass) => {
 let resultPass = login("123")
 
 console.log(resultPass("12"))
+
+
+// Real World Question 2 — Role Permission
+//

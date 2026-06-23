@@ -296,3 +296,7 @@ let finaluserdata = userdata.map((value) => {
     return value.name
 })
 console.log(finaluserdata)
+
+// if we  not  retun the  call back function then it retu the undefind in  console 
+
+

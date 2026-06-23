@@ -89,4 +89,16 @@ async () => {
     console.log(data)
 }
 
+//Error Handling
+//Network fail ho sakta hai.
 
+
+async function handel() {
+
+    try {
+        let res = await fetch('https://jsonplaceholder.typicode.com/todos/1')
+        let data = await res.json();
+        console.log(data)
+    }
+    
+}

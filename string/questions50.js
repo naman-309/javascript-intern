@@ -2,6 +2,7 @@
 // string is a premitive  data type
 // denoted  by = " " '' `` 
 
+const console = require("node:console")
 const { only } = require("node:test")
 
 let exp = "naman patidar" // example of  string 
@@ -915,20 +916,43 @@ else {
 // 19. Count words in a string (without split).
 //18. Find the first repeating character.
 
-let re = "annmm"
 
+let bandi = 123456
 
-for (i = 0; i <= length - 1; i++) {
+let banda = bandi.toString()
+for (char of banda) {
 
-
+    if (char % 2 === 0) {
+        console.log(char)
+    }
 }
 
 
-let sum = "aaabbbccc"
+let gof = "aaabbbccc"
+
+let go = ""
+// abc
+for (i = 0; i < gof.length; i++) {
 
 
 
-for (i = 0; i <= sum.length; i++) {
+    for (j = 0; j < gof.length; j++) {
+        if (gof[j] === gof[i]) {
+            console.log("yes")
+            go += gof[i]
+            break
 
+        }
+        for (k = 0; k < go.length; k++) {
+            if (gof[j] === go[k]) {
+
+                break
+                console.log(go)
+
+            }
+
+        }
+    }
 
 }
+

@@ -1,0 +1,4 @@
+git status  
+git add  . 
+git  commit  -m "xys"
+git  push origin main 
