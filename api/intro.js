@@ -3,6 +3,7 @@
 
 
 
+
 // fetch("./users.json")
 //     .then(a => a.json())
 //     .then(data => console.log(data[0].name));
@@ -13,7 +14,7 @@
 let user = {
     name: "Naman",
     age: 22,
-    email: "namanp[aridar@gmsil.com"
+    email: "namanparidar@gmsil.com"
 };
 let a = JSON.stringify(user)  // ye  object  ko  string me  convet kt deta  hai  
 console.log(typeof (a))
@@ -91,14 +92,111 @@ async () => {
 
 //Error Handling
 //Network fail ho sakta hai.
-
-
-async function handel() {
+//example  
+(async function handel() {
 
     try {
         let res = await fetch('https://jsonplaceholder.typicode.com/todos/1')
         let data = await res.json();
         console.log(data)
     }
-    
+
+    catch (error) {
+        console.log("code  fat gya  bhai", error)
+
+        //type  opf  error is object  - ye object  js  engine  banata hai  jb usko nhi pta  kese resolve  krna  hai 
+    }
+
+})()
+// IIFE - : Immediately Invoked Function Expression  - type of function -
+
+
+
+// POST Request
+//Server par data bhejna.
+
+// fetch('https://jsonplaceholder.typicode.com/todos/1', {
+
+//     method: "POST",
+//     headers: {
+//         "Content-Type": "application/json"
+
+//     },
+
+//     body: JSON.stringify({
+//         title: "shirt",
+//         price: "100"
+//     })
+// })
+
+//     .then(res => res.json())
+//     .then(data => console.log(data))
+
+
+
+
+// example try 
+
+async function test() {
+
+    let url = "https://dummyjson.com/user"
+
+    let res = await fetch(url)
+    let data = await res.json()
+    console.log(data.users)
 }
+
+test()
+
+
+
+// Data to send
+const users = {
+    name: "John",
+    age: 25
+};
+
+// POST request
+fetch("https://jsonplaceholder.typicode.com/users", {
+    method: "POST",
+    headers: {
+        "Content-Type": "application/json"
+    },
+    body: JSON.stringify(users)
+})
+    .then(response => response.json())
+    .then(data => console.log("Server Response:", data))
+
+    .catch(error => console.error("Error:", error));
+
+
+
+// example  by  self  post  methods asunc await 
+// hum res.json() - broweser  ko instrunt  krte ki data  ko js  ibject  me  comvet  kro 
+// hum res.text() - same  work but  it  give  us  all row  data.
+let testdata = {
+    name: "animal",
+    age: 25,
+    email: "naman@gmail.com"
+
+};
+let header = {
+    method: "POST",
+    headers: {
+        "Content-Type": "application/json"
+    }
+    ,
+    body: JSON.stringify(testdata)
+}
+
+
+let cartoon = async () => {
+
+    let res = await fetch("https://jsonplaceholder.typicode.com/users", header)
+    let data = await res.json()
+    console.log(data)
+
+}
+cartoon()
+
+
