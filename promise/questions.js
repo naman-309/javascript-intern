@@ -188,7 +188,6 @@ let userDet = (sucess) => {
         })
     )
 }
-
 let handelUserDet = async (isfatched) => {
     try {
         let userData = await userDet(isfatched)
@@ -200,3 +199,49 @@ let handelUserDet = async (isfatched) => {
 }
 
 handelUserDet(false)
+
+
+
+
+let gandu = (let) => {
+
+    return new Promise((res, rej) => {
+
+        if (let) {
+            res("jitt gya  ")
+
+        }
+        else {
+            rej("haraarrr  gya  ..")
+        }
+    })
+}
+
+let handelgandu = async () => {
+
+
+    try {
+        let data = await gandu(false)
+        console.log(data)
+    }
+    catch (error) {
+        console.log(error)
+    }
+}
+
+handelgandu()
+
+
+async function demodat() {
+
+    try {
+        const res = await fetch(url)
+        console.log(res)
+    }
+
+    catch (error) {
+
+    }
+
+}
+
