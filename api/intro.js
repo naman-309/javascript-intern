@@ -7,9 +7,7 @@
 // fetch("./users.json")
 //     .then(a => a.json())
 //     .then(data => console.log(data[0].name));
-
 // comvet the  json  data  
-
 
 let user = {
     name: "Naman",
@@ -25,7 +23,6 @@ let jsonData = '{"name":"Naman","age":22}'; //string  ko  object  bna  deta  hai
 let demo = JSON.parse(jsonData);
 console.log(demo.name); // Output: Naman
 console.log(typeof demo)
-
 
 //Async Nature of API
 //API instantly data nahi deti.
@@ -101,12 +98,12 @@ async () => {
         console.log(data)
     }
 
+
     catch (error) {
         console.log("code  fat gya  bhai", error)
 
         //type  opf  error is object  - ye object  js  engine  banata hai  jb usko nhi pta  kese resolve  krna  hai 
     }
-
 })()
 // IIFE - : Immediately Invoked Function Expression  - type of function -
 
@@ -136,7 +133,6 @@ async () => {
 
 
 // example try 
-
 async function test() {
 
     let url = "https://dummyjson.com/user"
@@ -188,7 +184,6 @@ let header = {
     body: JSON.stringify(testdata)
 }
 
-
 let cartoon = async () => {
 
     let res = await fetch("https://jsonplaceholder.typicode.com/users", header)
@@ -198,4 +193,15 @@ let cartoon = async () => {
 }
 cartoon()
 
+
+
+
+let url = "https://jsonplaceholder.typicode.com/todos/1"
+let chai = async () => {
+    let res = await fetch(url)
+    let data = await res.json()
+    console.log(data.id)
+}
+
+chai()
 

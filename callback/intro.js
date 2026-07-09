@@ -1,28 +1,25 @@
 // callback function 
-
-
-
-
-
 function chai() {
-
     console.log("ye call back function hai  bhai ")
-
-
 }
 
-function pinaHai(a) {
+
+
+
+
+function pinaHai(xyz) {
 
     console.log("this  is function Demo");
-    a()
+    xyz()
 }
 
 pinaHai(chai)
 
 
+
 console.log("    ")
 
-//  chai - ek argument  hai ab  to isko handel krne  liye  parmameter  to chiye na  
+// //  chai - ek argument  hai ab  to isko handel krne  liye  parmameter  to chiye na
 
 
 
@@ -39,7 +36,7 @@ greetName(mainGreet)
 
 
 console.log(" ")
-// callback by arry syntx 
+// // callback by arry syntx
 
 let sirName = () => {
     return ("PATIDAR")
@@ -50,18 +47,34 @@ let name = (handelSirName) => {
 }
 name(sirName)
 
-console.log("")
-// common  syntx of  callback  - like  we  dont make new  function and  then pass  refrence 
-// a  - is  just a  parmanenter like  - xyz...we can type 
-let userName = (a) => {
-    console.log("website")
-    a()
-}
+// console.log("")
+// // common  syntx of  callback  - like  we  dont make new  function and  then pass  refrence
+// // a  - is  just a  parmanenter like  - xyz...we can type
+// let userName = (a) => {
+//     console.log("website")
+//     a()
+// }
 
-userName((
-    () => {
-        console.log("hello")
-    }
-))
+// userName((
+//     () => {
+//         console.log("hello")
+//     }
+// ))
 
-console.log("")
+// console.log("")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -136,6 +136,11 @@ console.log(addnew)
 
 //  total cart  price  print  (reduce)
 
+
+console.log("  ")
+console.log("  ")
+console.log("  ")
+
 let cart = [
 
     { prodcut: "shirt", price: 500 },
@@ -153,7 +158,7 @@ console.log(finalCartPrice)
 // prodcut  avobe  price  1000 fliter  
 
 let above = cart.filter((value) => {
-    return value.price > 1000
+    return value.price >= 110
 })
 
 console.log(above)

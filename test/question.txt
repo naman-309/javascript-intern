@@ -1,0 +1,44 @@
+Q1. Find the first non-repeated character in 'javascript'.
+
+Q2. Check whether 'listen' and 'silent' are anagrams.
+
+Q3. Find the frequency of every element in [1,2,2,3,1,4,2,5] without using Map.
+
+Q4. Rotate array [10,20,30,40,50] left by 2 positions.
+
+Q5. Find the longest word in: I am learning JavaScript programming.
+
+Q6. Explain pass by value and pass by reference with examples.
+
+Q7. Explain hoisting for var, let and const.
+
+Q8. Difference between shallow copy and deep copy.
+
+Q9. Explain execution context in JavaScript.
+
+Q10. Difference between primitive and non-primitive data types.
+
+Q11. From [{name:'A',40},{name:'B',85},{name:'C',65},{name:'D',28}] print students
+with marks >=33.
+
+Q12. Find second highest salary from [25000,40000,35000,70000,65000] without
+sort().
+
+Q13. Reverse every word of: 'I Love JavaScript' while keeping word order.
+
+Q14. Count uppercase, lowercase, digits and special characters in 'Hello@123JS'.
+
+Q15. Compress string 'aaabbccccdd' to a3b2c4d2.
+
+Q16. Merge [1,2,3,4] and [3,4,5,6] without duplicates.
+
+Q17. Find all duplicate numbers from [1,2,3,2,4,5,1,6,3].
+
+Q18. Move all zeros to the end: [1,0,5,0,8,0,2].
+
+Q19. Given student={name:'Rahul', marks:{math:80, english:60, science:75}}, print
+
+Total Marks, Average and Grade.
+
+Q20. From transactions [{credit:500},{debit:200},{credit:700},{debit:300}] calculate
+Total Credit, Total Debit and Final Balance.
