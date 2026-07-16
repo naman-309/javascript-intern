@@ -4,9 +4,6 @@ function chai() {
 }
 
 
-
-
-
 function pinaHai(xyz) {
 
     console.log("this  is function Demo");

@@ -1,6 +1,5 @@
 // intro promise
 
-
 // Promise = ek aisa object jo future me result dega
 
 // syntx 
@@ -89,7 +88,6 @@ marks
     .catch((error) => {
         console.log(error)
     })
-
 
 
 /// send  data  in promise  

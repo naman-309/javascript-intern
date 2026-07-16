@@ -164,8 +164,6 @@ console.log(dash)
 // let demo = str12.replaceAll(" ", "-")
 // console.log(demo)
 
-
-
 // 14. Count how many times a specific character appears.
 let str13 = "naman"
 
