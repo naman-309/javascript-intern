@@ -1,0 +1,23 @@
+//this  day  we  unnderstand the  file  struct  and  foldstru 
+// divide thingsS
+.. APPP .JS  =  MIDDLE  WARE 
+ROUTRR = YE  ECIDE  KRTA  HAI  KIS  ROTER  PR KONSA  FUNCTION CALL HOGA 
+Postman
+   ↓
+server.js starts server
+   ↓
+app.js receives request
+   ↓
+/api matches app.js route
+   ↓
+/postdata matches router
+   ↓
+createUser controller runs
+   ↓
+req.body se data milta hai
+   ↓
+users.push(userData)
+   ↓
+Data db.js ke users array me save
+   ↓
+Response Postman ko milta hai

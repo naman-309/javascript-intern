@@ -154,3 +154,35 @@ console.log(same)
 
 // 👉 Input: "12345" → true
 // 👉 Input: "123a5" → false
+
+
+/// // 
+//let arr = [10,20,50 ,0,0,340,50,0,10]
+let arr = [1, 2, 3, 9, 5, 6, 0, 7, 0, 8]
+let temp = []
+let zero = []
+// move  all the  zero to the  last 
+
+for (i = 0; i <= arr.length; i++) {
+    let isGreater = false;
+    // i =20 , 
+    // j = 10 
+    for (j = 1; j <= arr.length; j++) {
+        if (arr[i] > arr[j]) {
+            isGreater = true
+            temp += arr[i]
+            break
+        }
+    }
+
+}
+//console.log(temp)
+for (i = 1; i < arr.length; i++) {
+    if (arr[i] === 0) {
+        zero += arr[i]
+    }
+}
+
+//  console.log("initial arry" ,arr)
+console.log(temp + zero)
+

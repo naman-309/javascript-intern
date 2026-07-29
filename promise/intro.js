@@ -2,6 +2,7 @@
 
 // Promise = ek aisa object jo future me result dega
 
+
 // syntx 
 let myPromise = new Promise(function (resolve, reject) {
     resolve("kam ho gya  hai ")
@@ -12,7 +13,7 @@ console.log(myPromise)
 // promise user .then() and  .catch()
 
 let pro = new Promise((res, rej) => {
-
+    ;
     let sucess = true
     if (sucess) {
         res("login sucess hho gya  hai ")
