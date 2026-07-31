@@ -15,7 +15,6 @@ const createCourse = (req, res) => {
         message: "course added sucessfully"
     })
 }
-
 const getCourse = (req, res) => {
     res.json({
         message: "courses fatched sucesfuly",
