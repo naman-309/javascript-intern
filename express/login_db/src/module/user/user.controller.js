@@ -124,5 +124,6 @@ export const deleteUser = async (req, res) => {
             message: "Internal server error",
             error: err.message
         });
+
     }
 };

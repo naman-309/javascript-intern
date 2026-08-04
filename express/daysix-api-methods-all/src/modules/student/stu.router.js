@@ -1,6 +1,6 @@
 
 
-import { getStudent, createStudent, updateSudent, deleteStudent } from "./stu.controller.js";
+import { getStudent, createStudent, updateSudent, deleteStudent, patchStudent } from "./stu.controller.js";
 import express from "express"
 const router = express.Router()
 
@@ -17,4 +17,6 @@ router.put("/student", updateSudent)
 router.delete("/student", deleteStudent)
 export default router
 
-//patch api 
+//patch api  - by params  
+
+router.patch("/student/:student_id", patchStudent)

@@ -1,0 +1,4 @@
+POST http://localhost:5000/api/users/signup
+POST http://localhost:5000/api/users/login 
+
+model fir  db - queeries  function with  callback fun

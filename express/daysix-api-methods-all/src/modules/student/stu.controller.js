@@ -1,4 +1,5 @@
 // main logic file
+import { count } from "node:console";
 import { pool } from "../../db/db.js";
 
 // for  get  api 
@@ -109,9 +110,34 @@ export const deleteStudent = async (req, res) => {
             })
         }
 
-
-
     } catch (err) {
         console.log(err)
     }
 }
+
+//
+//  patch api 
+export const patchStudent = async (req, res) => {
+    try {
+        const { student_id } = req.params;
+        const { name, email, course, fees } = req.body;
+
+        if (!student_id) {
+            return res.json({ message: "Student ID is required" });
+        }
+
+        const query = "UPDATE students SET name = ?, email = ?, course = ?, fees = ? WHERE student_id = ?";
+
+        const [data] = await pool.query(query, [name, email, course, fees, student_id]);
+
+        if (data.affectedRows === 0) {
+            return res.json({ message: "Student not found" });
+        }
+
+        return res.json({ message: "Student updated successfully" });
+
+    } catch (err) {
+        console.error(err);
+        return res.json({ message: "Internal server error" });
+    }
+};
