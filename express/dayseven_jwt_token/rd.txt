@@ -1,0 +1,10 @@
+// ye  3  parmenter  leta  hai  
+1 = users data like  id , name  etc
+2 = secerete key 
+3 = time  of expice  1,= acess token , 2= refresstoken 
+
+refersh token ki life  jata  hoti h 
+and  access toked ki like  choti   hoga  hai  
+
+// user  login kr time  kam aygea only abhi
+// gb usrr  ko msg bhej rhe  hai tab token genenrate  kr le or res.json me  bhej de  
