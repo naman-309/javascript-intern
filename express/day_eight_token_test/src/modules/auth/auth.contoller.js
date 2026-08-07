@@ -100,8 +100,9 @@ export const userLogin = async (req, res) => {
     }
 };
 
-export const getProfile = async (req, res) => {
+// to get  profile  deatails  after verification 
 
+export const getProfile = async (req, res) => {
 
     try {
         const user = req.user
@@ -111,5 +112,98 @@ export const getProfile = async (req, res) => {
     } catch (error) {
         console.log(error)
 
+    }
+}
+
+// to update  user  profile 
+export const updateUserProfile = async (req, res) => {
+
+    try {
+
+        const { name, email } = req.body
+        let { password } = req.body
+        const user = req.user
+        const id = user.id
+
+        if (!id) {
+            res.json({ message: "id  not found" })
+        }
+
+        const hashpassword = await bcrypt.hash(password, 10)
+        password = hashpassword
+        const query = "update users set name = ? , email = ? , password = ? where id= ?"
+        const [result] = await pool.query(query, [name, email, password, id])
+        if (result.affectedRows === 1) {
+            res.json({
+                message: "user profile updated succesfully"
+
+            })
+        }
+        else {
+            res.json({ message: "failed  to update the  profile" })
+        }
+
+
+
+    } catch (error) {
+        console.log(error)
+    }
+}
+
+// special for chnage  password  patch api 
+export const chnagePassword = async (req, res) => {
+
+    try {
+
+        const { oldPassword, newPassword } = req.body
+        const user = req.user
+        const id = user.id
+        if (!oldPassword || !newPassword) {
+            res.json({ message: "all filed are  requied" })
+        }
+
+        const [result] = await pool.query("SELECT * FROM users WHERE id = ?", [id]);
+        const data = result[0]
+
+        const isPassValid = await bcrypt.compare(oldPassword, data.password)
+        if (!isPassValid) {
+            res.json({ message: "invalid old password" })
+        }
+        const hashPassword = await bcrypt.hash(newPassword, 10)
+        let password = hashPassword
+
+        const [finalResult] = await pool.query("update users set password = ?where  id  = ?", [password, id])
+
+        if (finalResult.affectedRows === 1) {
+            res.json({
+                message: "user  password  updated successfully"
+            })
+        }
+        else {
+            res.json({ message: "failed to chnage  password" })
+        }
+
+
+    } catch (err) {
+        console.log(err)
+
+    }
+}
+
+
+// to delete  the  user  
+
+export const delteUser = async (req, res) => {
+    try {
+
+        const user = req.user
+        const id = user.id
+
+        const [data] = await pool.query("delete from users where  id =?", [id])
+        if (data.affectedRows) {
+            res.json({ message: "deleted sucessfully" })
+        }
+    } catch (error) {
+        console.log(error)
     }
 }

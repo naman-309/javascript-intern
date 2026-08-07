@@ -1,0 +1,10 @@
+POST   /api/auth/register
+POST   /api/auth/login
+GET    /api/auth/profile
+GET    /api/auth/users
+
+
+
+// new  kya  kiya  - coros ko  installl kiya backend me  to allow the  api form frontend  
+//   frontend me  almost  ab new  hai  
+// fist  installl the  vite@latest name 
