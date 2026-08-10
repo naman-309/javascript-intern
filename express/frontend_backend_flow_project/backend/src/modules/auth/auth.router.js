@@ -17,6 +17,6 @@ router.post("/login", userLogin);
 
 // Protected routes
 router.get("/profile", verifyAuth, getProfile);
-router.get("/users", getAllUsers);
+router.get("/users", verifyAuth, getAllUsers);
 
 export default router;
