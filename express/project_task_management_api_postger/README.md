@@ -1,18 +1,18 @@
-// making a  task managemenrt  system api's 
-// only  backend 
-//test on postman 
-// used  postgerSQL - neon  cloud database 
- 
- // we have two table in this  connected with   foregin  key 
-
- table  one  USER  - have  the  user  info 
- table two  TASK - have the infor about  the task od user  
-
-
- requiorements  = npm i express pg dotenv bcrypt cookie-parser jsonwebtoken  
-
-
-  // i   make  the  db tables form the  db.setup.js  - 
-
-
-  //  i followed the  standred  strucure of folder  
+├── config/
+│   └── db.js                 # PostgreSQL Pool connection settings
+├── db/
+│   └── db.setup.js           # Auto table creation script (Run on startup)
+├── controllers/
+│   ├── auth.controller.js    # Register, Login, Logout logic
+│   ├── user.controller.js    # Profile management logic
+│   └── task.controller.js    # Task CRUD logic with ownership checks
+├── middlewares/
+│   └── auth.middleware.js    # JWT verification middleware
+├── routes/
+│   ├── auth.routes.js        # Auth endpoint definitions
+│   ├── user.routes.js        # User endpoint definitions
+│   └── task.routes.js        # Task endpoint definitions
+├── .env                      # Environment variables (Git-ignored)
+├── .env.example              # Sample environment template
+├── server.js                 # Express app initialization & server startup
+└── README.md

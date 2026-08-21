@@ -60,10 +60,13 @@ export const userLogin = async (req, res) => {
         if (users.length === 0) {
             res.json({ message: "user not found" })
         }
-
-        // main  - part 
         const user = users[0]
 
+        const test = user[1]
+
+        // main  - part 
+
+        console.log("user from db :", user)
         // compare  the  pass 
         const isValidPassword = await bcrypt.compare(password, user.password)
         if (!isValidPassword) {
@@ -87,8 +90,6 @@ export const userLogin = async (req, res) => {
         res.json({
             message: "user login successfully"
         })
-
-
 
 
     } catch (error) {
