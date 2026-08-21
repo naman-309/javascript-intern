@@ -26,10 +26,8 @@ const io = new Server(httpServer, {
 
 //phle  middleware  to verify  
 io.use(socketAuth);
-// socket.io  related  code ko alg file mw  bhejna  
+// socket.io  related  code ko alg file me  bhejna  
 socketHandler(io);
-
-
 
 
 //    start  karne  ke  liye  function

@@ -9,6 +9,7 @@ export const registerLimiter = rateLimit({
     // Ek IP se maximum 1 request
     limit: 1,
 
+
     // Rate-limit information response headers me bhejega
     standardHeaders: true,
 
@@ -20,5 +21,7 @@ export const registerLimiter = rateLimit({
         message: "Too many registration attempts. Try again after 1 hour."
     }
 });
+
+
 
 
