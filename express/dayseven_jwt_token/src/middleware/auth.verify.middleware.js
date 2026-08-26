@@ -13,7 +13,7 @@ export const authVerify = async (req, res, next) => {
         const token = authHeader.split(" ")[1]
         console.log(token)
 
-        const decodedToken = jwt.verify(token, "interinfotech")
+        const decodedToken = jwt.verify(token, "interinfotech")	
         console.log(decodedToken)
 
         req.user = decodedToken

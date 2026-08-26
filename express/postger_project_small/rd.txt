@@ -1,16 +1,25 @@
+1	Variables	value store kahan hoti hai
+           
+Why variable
+Declaration
+Initialization
+Assignment
+Value update
+let
+const
+Naming rules
+camelCase
+Variable tracing
+ 
 
-// setup.js file  - 
-Start backend
- ↓
-db.setup.js
- ↓
-CREATE TABLE IF NOT EXISTS users
- ↓
-Neon checks table
- ↓
-table doesn't exist?
-    YES → create
-    NO → do nothing
-
-
-    
+2	Data Types	string, number, boolean kya hain
+3	Operators	calculation/comparison kaise hota hai
+4	Conditions	decision kaise lete hain
+5	Loops	same kaam repeat kaise hota hai
+6	Functions	code ko reusable kaise banate hain
+7	Strings	text ke saath kaam
+8	Arrays	multiple values store/manage
+9	Objects	related data ko group karna
+10	Array methods	map, filter, find etc.
+11	Callbacks	function ko function me pass karna
+12	DOM basics	JS ko webpage se connect karna
